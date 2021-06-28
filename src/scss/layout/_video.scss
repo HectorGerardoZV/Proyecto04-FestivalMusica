@@ -27,10 +27,21 @@
         flex-direction: column;
         font-size: 7rem;
         align-items: flex-start;
+        width: 100%;
         span {
             background-color: $cRosa;
             font-size: 2rem;
-            padding: 1rem 2rem
+            padding: 1rem 2rem;
+            @include mq($tablet) {
+                font-size: 1.5rem;
+            }
+        }
+        @include mq($tablet) {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            width: 100%;
         }
     }
 }

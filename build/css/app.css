@@ -472,9 +472,24 @@ p {
   flex-direction: column;
   font-size: 7rem;
   align-items: flex-start;
+  width: 100%;
 }
 .video__contenido h2 span {
   background-color: #f53756;
   font-size: 2rem;
   padding: 1rem 2rem;
+}
+@media (max-width: 768px) {
+  .video__contenido h2 span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .video__contenido h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    width: 100%;
+  }
 }
