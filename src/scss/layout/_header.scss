@@ -1,0 +1,12 @@
+.header {
+    background-color: $cVerde;
+    .header__contenido {
+        padding: 2rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        font-weight: $fPrincipal900;
+    }
+}

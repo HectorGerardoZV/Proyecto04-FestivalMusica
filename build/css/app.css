@@ -362,6 +362,13 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -383,4 +390,17 @@ p {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #4cb8b3;
+}
+.header .header__contenido {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  font-weight: 900;
 }
