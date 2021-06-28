@@ -441,3 +441,40 @@ p {
     flex-direction: column;
   }
 }
+
+.video {
+  position: relative;
+  max-height: 50rem;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(129.73deg, rgba(245, 87, 108, 0.5) 12.98%, rgba(184, 56, 199, 0.5) 84.94%);
+}
+.video video {
+  display: block;
+  width: 100%;
+}
+
+.video__contenido {
+  color: #ffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.video__contenido h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 7rem;
+  align-items: flex-start;
+}
+.video__contenido h2 span {
+  background-color: #f53756;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
