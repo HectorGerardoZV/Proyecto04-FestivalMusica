@@ -396,11 +396,26 @@ p {
   background-color: #4cb8b3;
 }
 .header .header__contenido {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header h1 {
-  font-weight: 900;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.navegacion a {
+  color: #ffff;
+  transition: ease 0.4s;
+  font-size: 2rem;
+}
+.navegacion a:hover {
+  color: #fef46d;
 }

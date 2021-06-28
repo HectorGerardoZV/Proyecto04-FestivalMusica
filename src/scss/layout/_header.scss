@@ -1,12 +1,27 @@
 .header {
     background-color: $cVerde;
     .header__contenido {
-        padding: 2rem 0rem;
+        padding: $separacion - 1 0rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     h1 {
-        font-weight: $fPrincipal900;
+        font-weight: $fPrincipal700;
+        color: $cBlanco
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    a {
+        color: $cBlanco;
+        transition: ease .4s;
+        font-size: 2rem;
+        &:hover {
+            color: $cAmarillo;
+        }
     }
 }
