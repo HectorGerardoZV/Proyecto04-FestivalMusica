@@ -5,10 +5,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mq($tablet) {
+            flex-direction: column;
+        }
     }
     h1 {
         font-weight: $fPrincipal700;
-        color: $cBlanco
+        color: $cBlanco;
+        @include mq($tablet) {
+            font-size: 3.5rem;
+            text-align: center;
+        }
     }
 }
 
@@ -23,5 +30,12 @@
         &:hover {
             color: $cAmarillo;
         }
+    }
+    @include mq($tablet) {
+        margin-top: 3rem;
+    }
+    @include mq($phone) {
+        margin-top: 3rem;
+        flex-direction: column;
     }
 }
