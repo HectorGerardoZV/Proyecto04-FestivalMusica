@@ -3,3 +3,17 @@
         @content;
     }
 }
+
+@mixin flex($separacion) {
+    display: flex;
+    justify-content: space-between;
+    gap: $separacion;
+    @content;
+}
+
+@mixin grid($columns, $separacion) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    column-gap: $separacion;
+    @content;
+}
