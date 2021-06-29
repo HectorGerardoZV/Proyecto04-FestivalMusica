@@ -624,3 +624,39 @@ p {
 .bg-amarillo .calendario li:nth-child(odd) {
   background-color: #fdee21;
 }
+
+.galeria {
+  padding: 4rem 0;
+}
+.galeria h3 {
+  text-align: center;
+}
+
+.galeria__imagenes {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (max-width: 768px) {
+  .galeria__imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .galeria__imagenes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    grid: none;
+  }
+}
+
+.galeria__img {
+  width: 100%;
+}

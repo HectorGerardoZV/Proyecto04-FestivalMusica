@@ -1,0 +1,28 @@
+.galeria {
+    padding: $separacion 0;
+    h3 {
+        text-align: center;
+    }
+}
+
+.galeria__imagenes {
+    padding: 0;
+    list-style: none;
+    @include grid(6, 2rem) {
+        row-gap: 2rem;
+    }
+    @include mq($tablet) {
+        @include grid(3, 2rem) {
+            row-gap: 2rem;
+        }
+    }
+    @include mq($phone) {
+        @include grid(1, 2rem) {
+            grid: none;
+        }
+    }
+}
+
+.galeria__img {
+    width: 100%;
+}
