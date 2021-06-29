@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const imagemin = require("gulp-imagemin");
 const notify = require("gulp-notify");
 const webp = require("gulp-webp");
+const concat = require("gulp-concat");
 
 //Compilando SASS
 function css() {
@@ -10,6 +11,12 @@ function css() {
         .pipe(sass())
         .pipe(dest("./build/css"));
 
+}
+
+function js() {
+    return src("./src/js/**/*.js")
+        .pipe(concat("bundle.js"))
+        .pipe(dest("./build/js"))
 }
 
 function imageMin() {
@@ -28,6 +35,7 @@ function imageWebp() {
 
 function observa() {
     watch("./src/scss/**/*.scss", css);
+    watch("./src/js/**/*.js", js);
 }
 
-exports.default = series(css, imageMin, imageWebp, observa);
+exports.default = series(css, js, observa);
