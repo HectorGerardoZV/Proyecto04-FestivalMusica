@@ -1,6 +1,9 @@
 .lineup {
     background-color: $cRosa;
     padding: $separacion 0;
+    @include mq($tablet) {
+        margin-top: 2rem;
+    }
     h3,
     p {
         text-align: center;
@@ -14,6 +17,11 @@
 
 .escenarios-contenedor {
     @include grid(2, $separacion);
+    @include mq($tablet) {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem
+    }
     .nombre-escenario {
         padding: 3rem;
         color: $cNegro;
@@ -46,7 +54,7 @@
     padding: 0;
     list-style: none;
     li {
-        padding: $separacion/2;
+        padding: $separacion - 2;
         font-weight: $fPrincipal700;
         span {
             font-weight: $fPrincipal400;

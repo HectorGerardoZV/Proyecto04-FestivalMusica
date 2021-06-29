@@ -555,6 +555,11 @@ p {
   background-color: #f53756;
   padding: 4rem 0;
 }
+@media (max-width: 768px) {
+  .lineup {
+    margin-top: 2rem;
+  }
+}
 .lineup h3,
 .lineup p {
   text-align: center;
@@ -569,6 +574,13 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4rem;
+}
+@media (max-width: 768px) {
+  .escenarios-contenedor {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 .escenarios-contenedor .nombre-escenario {
   padding: 3rem;
