@@ -571,7 +571,7 @@ p {
   column-gap: 4rem;
 }
 .escenarios-contenedor .nombre-escenario {
-  padding: 2rem;
+  padding: 3rem;
   color: black;
 }
 .escenarios-contenedor .nombre-escenario:after {
@@ -591,4 +591,24 @@ p {
 
 .rock .nombre-escenario:after {
   background-image: url(../../../build/img/icono_rock.png);
+}
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-verde .calendario li:nth-child(odd) {
+  background-color: #3b9691;
+}
+
+.bg-amarillo .calendario li:nth-child(odd) {
+  background-color: #fdee21;
 }
