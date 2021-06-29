@@ -15,7 +15,29 @@
 .escenarios-contenedor {
     @include grid(2, $separacion);
     .nombre-escenario {
+        padding: 2rem;
         color: $cNegro;
-        &:after {}
+        &:after {
+            content: "";
+            width: 10rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 12rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+.edm .nombre-escenario {
+    &:after {
+        background-image: url(../../../build/img/icono_edm.png);
+    }
+}
+
+.rock .nombre-escenario {
+    &:after {
+        background-image: url(../../../build/img/icono_rock.png);
     }
 }

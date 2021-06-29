@@ -571,5 +571,24 @@ p {
   column-gap: 4rem;
 }
 .escenarios-contenedor .nombre-escenario {
+  padding: 2rem;
   color: black;
+}
+.escenarios-contenedor .nombre-escenario:after {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-size: 12rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url(../../../build/img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../../../build/img/icono_rock.png);
 }
