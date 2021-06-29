@@ -3,18 +3,36 @@
     @include grid(2, 5rem);
     min-height: 50rem;
     align-items: center;
+    @include mq($tablet) {
+        grid: none;
+    }
 }
 
 .informacion__contenido {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include mq($tablet) {
+        align-items: center;
+    }
     h3 {
         margin-bottom: 5rem;
+        @include mq($tablet) {
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
     }
     .informacion__contenido--fecha {
         color: $cRosa;
         font-weight: bold;
         margin-bottom: 5rem;
+        @include mq($tablet) {
+            margin-bottom: 2rem;
+        }
+    }
+    p {
+        @include mq($tablet) {
+            text-align: center;
+        }
     }
 }
