@@ -392,6 +392,14 @@ p {
   margin: 0 auto;
 }
 
+.bg-verde {
+  background-color: #4cb8b3;
+}
+
+.bg-amarillo {
+  background-color: #fef46d;
+}
+
 .header {
   background-color: #4cb8b3;
 }
@@ -541,4 +549,27 @@ p {
   .informacion__contenido p {
     text-align: center;
   }
+}
+
+.lineup {
+  background-color: #f53756;
+  padding: 4rem 0;
+}
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #ffff;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+.escenarios-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+.escenarios-contenedor .nombre-escenario {
+  color: black;
 }
