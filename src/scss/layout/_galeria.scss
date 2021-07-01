@@ -26,3 +26,21 @@
 .galeria__img {
     width: 100%;
 }
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.sroll-body {
+    overflow: scroll;
+}
+
+.hidden-body {
+    overflow: hidden;
+}
