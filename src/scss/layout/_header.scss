@@ -17,6 +17,11 @@
             text-align: center;
         }
     }
+    &.barra-fija {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #4444;
+    }
 }
 
 .navegacion {

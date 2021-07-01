@@ -424,6 +424,11 @@ p {
     text-align: center;
   }
 }
+.header.barra-fija {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.3rem 0.4rem #4444;
+}
 
 .navegacion {
   display: flex;
