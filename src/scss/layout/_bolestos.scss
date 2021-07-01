@@ -17,6 +17,9 @@
 .contenedor-boletos {
     margin-top: $separacion;
     @include grid(2, $separacion) {}
+    @include mq($tablet) {
+        grid: none;
+    }
 }
 
 .pase {
@@ -56,5 +59,8 @@
             color: $cBlanco;
             font-size: 2rem;
         }
+    }
+    @include mq($tablet) {
+        margin-bottom: $separacion;
     }
 }
